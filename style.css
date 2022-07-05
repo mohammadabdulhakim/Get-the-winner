@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(129, 129, 129);
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 100px;
+    border: 3.5px solid #444;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #000;
+    border: 3.5px solid rgb(192, 192, 192);
+}
+/* 
+button{
+    padding: 10px 30px;
+    margin: 0 -6px -3px 0 ;
+    cursor: pointer;
+    border: 1px solid rgb(195, 195, 195);
+} */
+
+/* .container{
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 10px;
+    border-radius: 6px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.6s;
+    justify-content: center;
+} */
+
+
+.container{
+    width: 500px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 10px;
+    border-radius: 4px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.head{
+    position: absolute;
+    top: 20px;
+    align-self: center;
+    margin: 10px 0 50px 0;
+}
+
+.input{
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-135px);
+}
+
+input{
+    border: none;
+    padding: 13px 20px;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    background-color: #666;
+    transition: 0.4s;
+}
+.input button{
+    padding: 13px;
+    border: none;
+    color: white;
+    background-color: #444;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.input button:hover{
+    background-color: #333;
+}
+
+input:focus{
+    background-color: #444;
+}
+
+input:focus + button{
+    background-color: black;
+
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+.container .name{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    align-items: center;
+    overflow:auto;
+    border-radius: 10px;
+    margin: 30px 0 15px 0;
+    padding: 20px;
+    justify-content: center;
+}
+h4{
+    position: relative;
+}
+.name h4::after{
+    content: 'remove';
+    position: absolute;
+    top: -45px;
+    display: none;
+    background: #666;
+    color: white;
+    left: 0;
+    padding: 5px;
+    border: 1px solid black;
+    font-weight: lighter;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.197);
+}
+.name h4:hover::after{
+    display: block;
+}
+
+h4{
+    text-transform: capitalize;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+.endbtns{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -30px;
+    margin-top: 5px;
+}
+
+.container button{
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.random{
+    background-color: rgb(0, 78, 0);
+}
+.container .random:hover{
+    background-color: green;
+}
+.clear{
+    background-color: rgb(168, 0, 0);
+}
+.container .clear:hover{
+    background-color: red;
+}
+
+
+
+@media screen and (max-width:540px){
+    .container{
+        width: 70%;
+        margin: 250px auto;
+    }
+    .input{
+        top: 150px;
+        left: 50%;
+        transform: translateX(-135px);
+    }
+}
