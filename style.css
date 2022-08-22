@@ -174,7 +174,7 @@ h4{
     background-color: rgb(0, 78, 0);
 }
 .container .random:hover{
-    background-color: green;
+    background-color: green; 
 }
 .clear{
     background-color: rgb(168, 0, 0);
